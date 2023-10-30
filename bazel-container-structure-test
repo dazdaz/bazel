@@ -1,0 +1,7 @@
+git clone https://github.com/GoogleContainerTools/container-structure-test
+# go.mod
+# github.com/fsouza/go-dockerclient v1.9.8
+# go mod download
+
+export GOARCH=amd64
+gcloud builds submit --region=europe-west6 --config deploy/cloudbuild.yaml
